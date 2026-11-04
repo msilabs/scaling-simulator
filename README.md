@@ -1,5 +1,7 @@
 # Scaling ও System Design সিমুলেটর
 
+লাইভ: https://msilabs.github.io/scaling-simulator/
+
 ট্রাফিক, অ্যাপ সার্ভার, Load Balancer, Cache, Read Replica, ডাটাবেস আর Autoscaling নিয়ে হাতে-কলমে system design শেখার সিমুলেটর।
 
 - **ফ্রি মোড:** এক মুহূর্তের অবস্থা; নিজের মতো সব বদলে দেখো
