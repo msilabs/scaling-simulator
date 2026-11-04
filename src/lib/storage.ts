@@ -1,13 +1,16 @@
 // localStorage কোথাও কোথাও কাজ না-ও করতে পারে (private window, artifact preview, ব্লক করা storage)।
 // তাই প্রতিটা read/write try/catch-এ মোড়ানো; ব্যর্থ হলে অ্যাপ স্বাভাবিকভাবে চলবে, শুধু মনে রাখবে না।
 
-const KEY = "scaling-sim:v1";
+const KEY = "scaling-sim:v2";
 
 export type Saved = {
-  mode?: "free" | "challenge";
+  mode?: string;
   free?: unknown;
+  day?: unknown;
   challengeIndex?: number;
-  completed?: string[];
+  /** চ্যালেঞ্জের id → সেরা তারা (১–৩) */
+  stars?: Record<string, unknown>;
+  introSeen?: boolean;
 };
 
 export function loadSaved(): Saved {
